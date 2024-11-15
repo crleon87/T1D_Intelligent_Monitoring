@@ -1,0 +1,2 @@
+model_checkpoint_path: "cluster5_LSTM16"
+all_model_checkpoint_paths: "cluster5_LSTM16"

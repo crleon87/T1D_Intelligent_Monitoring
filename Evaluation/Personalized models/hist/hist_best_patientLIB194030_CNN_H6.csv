@@ -1,0 +1,8 @@
+,488
+loss,46.53355026245117
+mean_squared_error,2166.123779296875
+root_mean_squared_error,46.54163360595703
+val_loss,51.398406982421875
+val_mean_squared_error,2646.9248046875
+val_root_mean_squared_error,51.448272705078125
+epoch,500.0

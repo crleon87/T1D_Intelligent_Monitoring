@@ -1,0 +1,2 @@
+model_checkpoint_path: "patient_LIB193603_CNN16"
+all_model_checkpoint_paths: "patient_LIB193603_CNN16"
