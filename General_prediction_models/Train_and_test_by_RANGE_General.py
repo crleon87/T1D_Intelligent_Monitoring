@@ -436,23 +436,25 @@ try:
             plt.gca().set_aspect((500) / (500))
 
             # Plot zone lines
-            plt.plot([0, 500], [0, 500], ':', c='black')  # Theoretical 45 regression line
-            plt.plot([0, 175 / 3], [70, 70], '-', c='black')
-            # plt.plot([175/3, 320], [70, 500], '-', c='black')
+            plt.plot([0, 500], [0, 500], ':', c='black', linewidth=2)  # Theoretical 45 regression line
+            plt.plot([0, 175 / 3], [70, 70], '-', c='black', linewidth=2)
+            # plt.plot([175/3, 320], [70, 500], '-', c='black', linewidth=2)
             plt.plot([175 / 3, 500 / 1.2], [70, 500], '-',
-                     c='black')  # Replace 320 with 400/1.2 because 100*(400 - 400/1.2)/(400/1.2) =  20% error
-            plt.plot([70, 70], [84, 500], '-', c='black')
-            plt.plot([0, 70], [180, 180], '-', c='black')
-            plt.plot([70, 290], [180, 500], '-', c='black')
-            # plt.plot([70, 70], [0, 175/3], '-', c='black')
-            plt.plot([70, 70], [0, 56], '-', c='black')  # Replace 175.3 with 56 because 100*abs(56-70)/70) = 20% error
-            # plt.plot([70, 500],[175/3, 320],'-', c='black')
-            plt.plot([70, 500], [56, 320], '-', c='black')
-            plt.plot([180, 180], [0, 70], '-', c='black')
-            plt.plot([180, 500], [70, 70], '-', c='black')
-            plt.plot([240, 240], [70, 180], '-', c='black')
-            plt.plot([240, 500], [180, 180], '-', c='black')
-            plt.plot([130, 180], [0, 70], '-', c='black')
+                     c='black', linewidth=2)  # Replace 320 with 400/1.2 because 100*(400 - 400/1.2)/(400/1.2) =  20% error
+            plt.plot([70, 70], [84, 500], '-', c='black', linewidth=2)
+            plt.plot([0, 70], [180, 180], '-', c='black', linewidth=2)
+            plt.plot([70, 290], [180, 500], '-', c='black', linewidth=2)
+            # plt.plot([70, 70], [0, 175/3], '-', c='black', linewidth=2)
+            plt.plot([70, 70], [0, 56], '-', c='black', linewidth=2)  # Replace 175.3 with 56 because 100*abs(56-70)/70) = 20% error
+            # plt.plot([70, 500],[175/3, 320],'-', c='black', linewidth=2)
+            
+            plt.plot([70, 500], [56, 400.79], '-', c='black', linewidth=2) ##########################
+            
+            plt.plot([180, 180], [0, 70], '-', c='black', linewidth=2)
+            plt.plot([180, 500], [70, 70], '-', c='black', linewidth=2)
+            plt.plot([240, 240], [70, 180], '-', c='black', linewidth=2)
+            plt.plot([240, 500], [180, 180], '-', c='black', linewidth=2)
+            plt.plot([130, 180], [0, 70], '-', c='black', linewidth=2)
 
             # Add zone titles
             plt.text(30, 15, "A", fontsize=15)
