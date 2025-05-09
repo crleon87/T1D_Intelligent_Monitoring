@@ -565,7 +565,7 @@ try:
 
             new_row = {'Model': list_dataframe_by_range_name[i], 'A': zone_percentajes[0], 'B': zone_percentajes[1],
                        'C': zone_percentajes[2], 'D': zone_percentajes[3], 'E': zone_percentajes[4],
-                       'A + B': zone_percentajes[0] + zone_percentajes[1], 'RMSE': rmse, 'MSE': mae, 'MAE': mae,
+                       'A + B': zone_percentajes[0] + zone_percentajes[1], 'RMSE': rmse, 'MSE': mse, 'MAE': mae,
                        'MAPE': mape}
             new_index = len(df_metrics_summary)
             df_metrics_summary.loc[new_index] = new_row
